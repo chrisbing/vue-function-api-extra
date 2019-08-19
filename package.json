@@ -11,6 +11,9 @@
     "build-files": "tsc",
     "build": "yarn build-bundle && yarn build-files"
   },
+  "files": [
+    "dist"
+  ],
   "typings": "dist/index.d.ts",
   "module": "dist/vue-function-api-extra.esm.js",
   "devDependencies": {
