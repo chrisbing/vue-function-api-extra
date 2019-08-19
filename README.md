@@ -107,12 +107,14 @@ use Getters in Vuex
 #### context
 
 **description:** Setup Context in ```vue-function-api``` 
+
 **type:** SetupContext
 
 
 #### getters
 
 **description** names of getters
+
 **type:** string[]
 
 ### example
