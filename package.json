@@ -7,8 +7,8 @@
   "author": "Chris bingyuwuhen@gmail.com",
   "license": "MIT",
   "scripts": {
-    "build-bundle": "rollup --config rollup.config.js",
-    "build-files": "tsc",
+    "build-bundle": "rollup --config build/rollup.config.js",
+    "build-files": "tsc && node build/move-ts.js",
     "build": "yarn build-bundle && yarn build-files"
   },
   "files": [
@@ -17,6 +17,9 @@
   "typings": "dist/index.d.ts",
   "module": "dist/vue-function-api-extra.esm.js",
   "devDependencies": {
+    "del": "^5.0.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
     "rollup": "^1.19.4",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-typescript": "^1.0.1",
