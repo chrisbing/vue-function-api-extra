@@ -28,6 +28,12 @@ resolve@^1.10.0:
   dependencies:
     path-parse "^1.0.6"
 
+rollup-plugin-json@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/rollup-plugin-json/-/rollup-plugin-json-4.0.0.tgz#a18da0a4b30bf5ca1ee76ddb1422afbb84ae2b9e"
+  dependencies:
+    rollup-pluginutils "^2.5.0"
+
 rollup-plugin-typescript@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/rollup-plugin-typescript/download/rollup-plugin-typescript-1.0.1.tgz#86565033b714c3d1f3aba510aad3dc519f7091e9"

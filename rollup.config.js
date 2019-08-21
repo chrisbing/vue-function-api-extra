@@ -1,4 +1,5 @@
 import typescript from 'rollup-plugin-typescript';
+import json from 'rollup-plugin-json'
 
 const generateConfig = (format, filename) => {
     return {
@@ -6,11 +7,16 @@ const generateConfig = (format, filename) => {
         output: {
             file: `dist/${filename}`,
             format: format,
-            name: 'VueFunctionApiExtra',
+            name: 'vueFunctionApiExtra',
+            globals: {
+                'vue-function-api': "vueFunctionApi"
+            }
         },
         plugins: [
-            typescript()
-        ]
+            json(),
+            typescript(),
+        ],
+        external: ['vue-function-api']
     }
 }
 
