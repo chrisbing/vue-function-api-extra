@@ -11,6 +11,12 @@
     "build-files": "tsc && node build/move-ts.js",
     "build": "yarn build-bundle && yarn build-files"
   },
+  "keywords": [
+    "vue",
+    "vue-function-api",
+    "vue-router",
+    "vuex"
+  ],
   "files": [
     "dist"
   ],
