@@ -8,8 +8,8 @@ import {AnyObject} from "vue-function-api/dist/types/basic";
  * @param context
  * @param getters Name array of getters.
  */
-export const useGetters = (context: SetupContext, getters:string[]) => {
-    const computedObject:AnyObject = {}
+export function useGetters(context: SetupContext, getters: string[]) {
+    const computedObject: AnyObject = {}
     getters.forEach((key) => {
         computedObject[key] = computed(() => context.store.getters[key])
     })
